@@ -1,0 +1,655 @@
+/*
+Theme Name: Bikcraft
+Theme URI: http://bikcraft.com
+Author: Hildebrando Filho
+Author URI: http://origamid.com/
+Description: Tema criado para a Bikcraft
+Version: 1.0
+*/
+
+@import 'css/normalize.css';
+@import 'css/reset.css';
+@import 'css/grid.css';
+@import 'css/sobre.css';
+@import 'css/produtos.css';
+@import 'css/portfolio.css';
+@import 'css/contato.css';
+@import 'css/blog.css';
+
+
+/*Estilos ADM WordPress*/
+.customize-support .header {
+    margin-top: 32px;
+}
+
+/* Estilos Gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.btn, .btn-preto {
+    border: 3px solid #FEC63E;
+    padding: 10px 30px;
+    color: #FEC63E;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+}
+
+.subtitulo-preto {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #FEC63E;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo-preto:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 8px auto;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+}
+
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FEC63E;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.header-menu {
+    text-align: right;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header-menu ul li a {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.header-menu ul li a:hover {
+    color: #fff;
+}
+
+.header-menu ul li.current_page_item a {
+    color: #fff;
+}
+
+/* Introdução */
+.introducao {
+    width: 100%;
+    height: 380px;
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.quote-externo p {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.quote-externo p:before, .quote-externo p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* Introdução Interna */
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+.introducao-interna h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
+}
+
+/* Produtos */
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos-lista li {
+    background: #FEC63E;
+    text-align: center;
+}
+
+.produtos-lista li img {
+    margin: 0 auto;
+}
+
+.produtos-lista a {
+    color: #000;
+}
+
+.produtos-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.produtos-lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+}
+
+.produtos-lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.produtos-icone {
+    background: #000;
+    padding: 20px;
+}
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+/* Portfólio */
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+	color: #fec63e;
+}
+
+.portfolio .subtitulo:after {
+	background: #fec63e;
+}
+
+.portfolio_lista div:last-of-type {
+	margin-top: 20px;
+}
+
+.portfolio .call p {
+	color: #fff;
+}
+
+/* Qualidade */
+.qualidade {
+    padding: 60px 0;
+}
+
+.qualidade:after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade-lista {
+    margin-top: 20px;
+    overflow: auto; /* clear-fix */
+}
+
+.qualidade-lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.qualidade-lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto;
+}
+
+/* Quebra Footer */
+.quebra {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.quebra .quote-externo {
+    max-width: 400px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEC63E;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 6px 0 12px 0;
+}
+
+.footer-historia {
+    padding-right: 40px;
+}
+
+.footer-contato ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-redes ul li a {
+    border: 3px solid #FEC63E;
+    display: block;
+    padding: 10px;
+}
+
+.footer-redes ul li a:hover {
+    border-color: #fff;
+
+}
+
+.copy {
+    width: 100%;
+    background: #FEC63E;
+    padding: 20px 0;
+}
+
+/*ESTILOS RESPONSIVOS*/
+
+/* CSS para Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+/* Produtos Home*/
+.produtos-lista li p {
+    padding: 10px 10px 10px 10px;
+}
+
+/* Qualidade Home*/
+.qualidade:after {
+    right: 66px;
+}
+
+.qualidade-lista li {
+    padding: 0 10px;
+}
+
+/* Footer */
+.footer-redes ul li a {
+    padding: 6px;
+}
+
+.footer-redes ul li a img{
+    width: 26px;
+    height: 26px;
+}
+
+/* Produtos */
+.produto-item h2 {
+    top: -156px;
+}
+
+.produto-icone {
+    padding: 41px 0;
+}
+
+.produto-info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: 122px;
+}
+
+.produto-info ul li {
+    width: 181px;
+}
+}
+
+
+/* CSS para Smartphones */
+@media only screen and (max-width: 787px) {
+
+/* Header */
+.header {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.header img {
+    margin: 0 auto 10px auto;
+}
+
+.header-menu {
+    text-align: center;
+}
+
+.header-menu ul li {
+    margin: 5px;
+}
+
+.header-menu ul li a {
+    border: 4px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+}
+
+.header-menu ul li a:hover {
+    border-color: #fff;
+}
+
+.header-menu ul li a.menu-ativo {
+    border-color: #fff;
+}
+
+/* Introdução */
+.introducao {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.introducao h1 {
+    font-size: 36px;
+} 
+
+/* Introdução Interna */
+.introducao-interna {
+    margin-top: 0px;
+}
+
+/* Call */
+.call {
+    padding-top: 10px;
+}
+
+/* Qualidade Home*/
+.qualidade:after {
+    display: none;
+}
+
+/* Sobre */
+.historia p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0px;
+}
+
+.historia ul li {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* Produtos */
+.produto-item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+}
+
+.produto-icone {
+    padding: 41px 0;
+}
+
+.produto-info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: auto;
+}
+
+.produto-info ul li {
+    font-size: 14px;
+    width: 149px;
+    padding-top: 14px;
+}
+
+.form {
+    padding-right: 0px;
+}
+
+.orcamento-dados ul {
+    padding-right: 0px;
+}
+
+/* Contato */
+.contato-form {
+    padding-right: 0px;
+    margin-bottom: 40px;
+}
+
+}
+
+
+
+/* JAVASCRIPT */
+.js [data-slide] {
+    position: relative;
+}
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+.js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+    z-index: 1;
+}
+
+.js [data-slide-nav] {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+    display: inline-block;
+    width: 12px;
+    margin: 4px;
+    height: 12px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    background: #1d1d1d;
+    text-indent: -100px;
+    overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+    background: #fec454;
+}
+
+.js [data-anime] {
+    opacity: 0;
+}
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
+#form-sucesso {
+    color: #31aa39;
+}
+
+#form-erro {
+    color: #f64540;
+}
