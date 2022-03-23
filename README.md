@@ -1,4 +1,4 @@
-# Bikcraft com WordPress - Origamid
+# Bikcraft com WordPress
 
 Implementação do WordPress como CMS no site do Bikcraft. Acrescentando também uma nova página de Blog.
 
